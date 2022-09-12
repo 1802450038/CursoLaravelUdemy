@@ -17,8 +17,10 @@ Route::get('/', 'PrincipalController@principal')->name("site.index");
 
 
 Route::get('/sobre-nos', 'SobrenosController@sobreNos')->name("site.sobrenos");
-
+// Rota com Get
 Route::get('/contato', 'ContatoController@contato')->name('site.contato');
+// Rota com Post
+Route::post('/contato', 'ContatoController@contato')->name('site.contato');
 
 Route::get('/login', function () {
     return "login";
